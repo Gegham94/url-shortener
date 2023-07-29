@@ -1,0 +1,33 @@
+.content {
+  margin-top: 100px;
+  .actions {
+    margin-bottom: 20px;
+    input {
+      outline: none;
+      height: 25px;
+      width: 300px;
+      margin-right: 20px;
+      padding: 0 10px;
+      border-radius: 5px;
+    }
+    button {
+      background: rgb(32, 32, 32);
+      color: white;
+      border-radius: 5px;
+      padding: 5px 15px;
+    }
+  }
+  .empty-model {
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+  }
+  .sorten-links {
+    .link-wrapper {
+      font-size: 18px;
+      color: rgb(78, 78, 78);
+    }
+    a {
+        font-size: 14px;
+    }
+  }
+}

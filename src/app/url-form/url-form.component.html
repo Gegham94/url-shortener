@@ -1,0 +1,22 @@
+<div class="content">
+  <div class="actions">
+    <input [(ngModel)]="urlInput" placeholder="Enter URL ..." />
+    <button (click)="shortenUrl()">Shorten</button>
+  </div>
+  <div class="empty-model" *ngIf="emptyUrl; else LinksModel">
+    Please insert a URL to shorten ...
+  </div>
+  <br />
+  <ng-template #LinksModel>
+    <div class="sorten-links">
+      <div class="link-wrapper">
+        Short link 1 -
+        <a [href]="link1$ | async" target="_blank">{{ link1$ | async }}</a>
+      </div>
+      <div class="link-wrapper">
+        Short link 2 -
+        <a [href]="link2$ | async" target="_blank">{{ link2$ | async }}</a>
+      </div>
+    </div>
+  </ng-template>
+</div>
